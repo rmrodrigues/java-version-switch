@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Copyright © 2014 by RMRodrigues
+#  This script is a simple wrapper.        
+#          
+#
+VERSION=0.1.0
+USAGE="Usage: jenv  environment_name[java5, java6, java7]"
+
+
+if [ $# == 0 ] ; then
+    echo $USAGE
+    exit 1;
+fi
+
+if [ $# == 1 ] && [ "$1" == "-version" ] ; then
+    echo "jevn version: $VERSION"
+    exit 1;
+fi
+
+if [ $# == 1 ] && [ "$1" != "java5" ] ; then
+    echo "$1 environment is not defined. Please fix it."
+    exit 1;
+fi
+
+. jenv-exec.sh $1

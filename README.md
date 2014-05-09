@@ -5,7 +5,7 @@ A simple tool to change the JAVA version (on the current terminal only).
 
 
 ##Intallation
-> **Note:**  Currently I'm working on mMAC OS X, but it will workin on Windows and Linux based operating systems
+> **Note:**  Currently I'm working on MAC OS X, but it will working on Windows and Linux based operating systems.
 
 ##MAC OS X Installation
 Copy the files *jenv* and *jenv-exec.sh* to */usr/bin*
@@ -13,7 +13,7 @@ Copy the files *jenv* and *jenv-exec.sh* to */usr/bin*
 sudo cp jenv /usr/bin
 sudo cp jenv-exec.sh /usr/bin
 ```
-Give permitions to them
+Define permissions to them
 
 ```bash
 sudo chmod ug+wrx jenv
@@ -22,7 +22,7 @@ sudo chmod ug+wrx jenv-exec.sh
 
 
 ##Configuration
-Before you sart using this tool you need to define the java path you want. So, you need edit the file *jenv-exec.sh* and set value to vars *JAVA5, JAVA6, JAVA7* like the exemple presented below:
+Before you start using this tool you need to define the java path you want. So, you need to edit the file *jenv-exec.sh* and set value to vars *JAVA5, JAVA6, JAVA7* like the exemple presented below:
 
 ```bash
 #Example:
